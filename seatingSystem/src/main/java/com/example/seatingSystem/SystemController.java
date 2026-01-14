@@ -7,10 +7,10 @@ import com.example.seatingSystem.SystemService;
 @RestController
 @RequestMapping("/api/seating")
 public class SystemController {
-    private final SystemService seatingSystemService;
+    private final SystemService service;
 
-    public SeatingController(SystemService seatingService) {
-        this.seatingSystemService = seatingService;
+    public SystemController(SystemService service) {
+        this.service = service;
     }
 
 }
